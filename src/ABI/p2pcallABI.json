@@ -1,0 +1,550 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_p2pContract",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "acceptedKycLevel",
+				"type": "uint256"
+			}
+		],
+		"name": "AcceptedKycLevelChange",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "_isFeeForBoth",
+				"type": "bool"
+			}
+		],
+		"name": "callConfirmDeal",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "_isFeeForBoth",
+				"type": "bool"
+			},
+			{
+				"internalType": "address",
+				"name": "_bitkubnext",
+				"type": "address"
+			}
+		],
+		"name": "callConfirmDealBitkubNext",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_isFeeForBoth",
+				"type": "bool"
+			},
+			{
+				"internalType": "address",
+				"name": "_receiver",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_offerTokenIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_offerTokenAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_offerNftIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_offerNftId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_getTokenIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_getTokenAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_getNftIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_getNftId",
+				"type": "uint256"
+			}
+		],
+		"name": "callOfferDeal",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_isFeeForBoth",
+				"type": "bool"
+			},
+			{
+				"internalType": "address",
+				"name": "_receiver",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_offerTokenIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_offerTokenAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_offerNftIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_offerNftId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_getTokenIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_getTokenAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_getNftIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_getNftId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_bitkubnext",
+				"type": "address"
+			}
+		],
+		"name": "callOfferDealBitkubNext",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_index",
+				"type": "uint256"
+			}
+		],
+		"name": "callRejectDeal",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_bitkubnext",
+				"type": "address"
+			}
+		],
+		"name": "callRejectDealBitkubNext",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "oldRate",
+				"type": "uint256"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "newRate",
+				"type": "uint256"
+			}
+		],
+		"name": "ChangeFee",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "bool",
+				"name": "isFeeForBoth",
+				"type": "bool"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "feeIndex",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "valueLock",
+				"type": "uint256"
+			}
+		],
+		"name": "ConfirmFee",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "bool",
+				"name": "isFeeForBoth",
+				"type": "bool"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "feeIndex",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "valueLock",
+				"type": "uint256"
+			}
+		],
+		"name": "LockFee",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "bool",
+				"name": "isFeeForBoth",
+				"type": "bool"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "feeIndex",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "valueLock",
+				"type": "uint256"
+			}
+		],
+		"name": "RejectFee",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_acceptedKycLevel",
+				"type": "uint256"
+			}
+		],
+		"name": "setAcceptedKycLevel",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_rate",
+				"type": "uint256"
+			}
+		],
+		"name": "setFee",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_tokenIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "_isKAPitem",
+				"type": "bool"
+			}
+		],
+		"name": "setIsKAPitem",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "tokenIndex",
+				"type": "uint256"
+			},
+			{
+				"indexed": true,
+				"internalType": "bool",
+				"name": "isKAPitem",
+				"type": "bool"
+			}
+		],
+		"name": "SetKAPitem",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_addr",
+				"type": "address"
+			}
+		],
+		"name": "setKYC",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "kycAddr",
+				"type": "address"
+			}
+		],
+		"name": "SetKyc",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_tokenIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_to",
+				"type": "address"
+			}
+		],
+		"name": "withdrawFee",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "tokenIndex",
+				"type": "uint256"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "WithdrawFee",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "acceptedKycLevel",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "fee",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "feeLock",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "feeIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "valueLock",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "isFeeForBoth",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "isKAPitem",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "kyc",
+		"outputs": [
+			{
+				"internalType": "contract IKYCBitkubChain",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "mainContract",
+		"outputs": [
+			{
+				"internalType": "contract p2pContract",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
