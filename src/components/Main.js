@@ -99,7 +99,7 @@ const Main = () => {
             if (dealdata !== null && address !== null & address !== undefined) {
                 if (dealdata.sender !== "0x0000000000000000000000000000000000000000") {
                     if (Number(dealdata.offerTokenIndex) === 1) {
-                        offer = <><img src='https://commudao.cmhexa.com/tokens/cmj.png' width='20px' alt='cmj'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} CMJ</>
+                        offer = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreiabbtn5pc6di4nwfgpqkk3ss6njgzkt2evilc5i2r754pgiru5x4u' width='20px' alt='cmj'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} CMJ</>
                         sendBal = dealdata.sender.toUpperCase() === address.toUpperCase() ? await readContract({
                             address: cmjtoken,
                             abi: kap20ABI,
@@ -107,7 +107,7 @@ const Main = () => {
                             args: [address],
                         }) : 0
                     } else if (Number(dealdata.offerTokenIndex) === 2) {
-                        offer = <><img src='https://commudao.cmhexa.com/tokens/jusdt.png' width='20px' alt='jusdt'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} JUSDT</>
+                        offer = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreif3vllg6mwswlqypqgtsh7i7wwap7zgrkvtlhdjoc63zjm7uv6vvi' width='20px' alt='jusdt'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} JUSDT</>
                         sendBal = dealdata.sender.toUpperCase() === address.toUpperCase() ? await readContract({
                             address: jusdttoken,
                             abi: kap20ABI,
@@ -115,7 +115,7 @@ const Main = () => {
                             args: [address],
                         }) : 0
                     } else if (Number(dealdata.offerTokenIndex) === 10001) {
-                        offer = <><img src='https://commudao.cmhexa.com/items/wood.png' width='20px' alt='wood'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} WOOD</>
+                        offer = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreidldk7skx44xwstwat2evjyp4u5oy5nmamnrhurqtjapnwqzwccd4' width='20px' alt='wood'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} WOOD</>
                         sendBal = dealdata.sender.toUpperCase() === address.toUpperCase() ? await readContract({
                             address: woodtoken,
                             abi: kap20ABI,
@@ -123,7 +123,7 @@ const Main = () => {
                             args: [address],
                         }) : 0
                     } else if (Number(dealdata.offerTokenIndex) === 10002) {
-                        offer = <><img src='https://commudao.cmhexa.com/items/tuna.png' width='20px' alt='tuna'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} TUNA</>
+                        offer = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreifqroahbmxgnmsqdot5bzu3xbsa7y27mnlo6k45efgidmqxqrstbe' width='20px' alt='tuna'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} TUNA</>
                         sendBal = dealdata.sender.toUpperCase() === address.toUpperCase() ? await readContract({
                             address: tunatoken,
                             abi: kap20ABI,
@@ -131,7 +131,7 @@ const Main = () => {
                             args: [address],
                         }) : 0
                     } else if (Number(dealdata.offerTokenIndex) === 10003) {
-                        offer = <><img src='https://commudao.cmhexa.com/items/mice.png' width='20px' alt='mice'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} MICE</>
+                        offer = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreidcakmgzpqytuzlvvok72r2hg2n5tqb25jfwecymelylaysdzkd6i' width='20px' alt='mice'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} MICE</>
                         sendBal = dealdata.sender.toUpperCase() === address.toUpperCase() ? await readContract({
                             address: micetoken,
                             abi: kap20ABI,
@@ -139,7 +139,7 @@ const Main = () => {
                             args: [address],
                         }) : 0
                     } else if (Number(dealdata.offerTokenIndex) === 10004) {
-                        offer = <><img src='https://commudao.cmhexa.com/items/copper.png' width='20px' alt='copper'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} COPPER</>
+                        offer = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreidau3s66zmqwtyp2oimumulxeuw7qm6apcornbvxbqmafvq3nstiq' width='20px' alt='copper'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} COPPER</>
                         sendBal = dealdata.sender.toUpperCase() === address.toUpperCase() ? await readContract({
                             address: coppertoken,
                             abi: kap20ABI,
@@ -147,7 +147,7 @@ const Main = () => {
                             args: [address],
                         }) : 0
                     } else if (Number(dealdata.offerTokenIndex) === 10005) {
-                        offer = <><img src='https://commudao.cmhexa.com/items/jasper.png' width='20px' alt='jasper'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} JASPER</>
+                        offer = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreidfl4mgyczqwl3gtunpherc5ri3qbfzm2vevdwcojmhpz3viubopy' width='20px' alt='jasper'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} JASPER</>
                         sendBal = dealdata.sender.toUpperCase() === address.toUpperCase() ? await readContract({
                             address: jaspertoken,
                             abi: kap20ABI,
@@ -155,7 +155,7 @@ const Main = () => {
                             args: [address],
                         }) : 0
                     } else if (Number(dealdata.offerTokenIndex) === 10006) {
-                        offer = <><img src='https://commudao.cmhexa.com/tokens/jdao.png' width='20px' alt='jdao'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} JDAO</>
+                        offer = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreia2bjrh7yw2vp23e5lnc6u75weg6nq7dzkyruggsnjxid6qtofeeq' width='20px' alt='jdao'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.offerTokenAmount)} JDAO</>
                         sendBal = dealdata.sender.toUpperCase() === address.toUpperCase() ? await readContract({
                             address: jdaotoken,
                             abi: kap20ABI,
@@ -181,7 +181,7 @@ const Main = () => {
                     }
 
                     if (Number(dealdata.getTokenIndex) === 1) {
-                        get = <><img src='https://commudao.cmhexa.com/tokens/cmj.png' width='20px' alt='cmj'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} CMJ</>
+                        get = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreiabbtn5pc6di4nwfgpqkk3ss6njgzkt2evilc5i2r754pgiru5x4u' width='20px' alt='cmj'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} CMJ</>
                         sendToken = dealdata.receiver.toUpperCase() === address.toUpperCase() ? 1 : 0
                         sendAmount = dealdata.receiver.toUpperCase() === address.toUpperCase() ? ethers.utils.formatEther(dealdata.getTokenAmount) : 0
                         sendBal = dealdata.receiver.toUpperCase() === address.toUpperCase() ? await readContract({
@@ -191,7 +191,7 @@ const Main = () => {
                             args: [address],
                         }) : 0
                     } else if (Number(dealdata.getTokenIndex) === 2) {
-                        get = <><img src='https://commudao.cmhexa.com/tokens/jusdt.png' width='20px' alt='jusdt'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} JUSDT</>
+                        get = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreif3vllg6mwswlqypqgtsh7i7wwap7zgrkvtlhdjoc63zjm7uv6vvi' width='20px' alt='jusdt'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} JUSDT</>
                         sendToken = dealdata.receiver.toUpperCase() === address.toUpperCase() ? 2 : 0
                         sendAmount = dealdata.receiver.toUpperCase() === address.toUpperCase() ? ethers.utils.formatEther(dealdata.getTokenAmount) : 0
                         sendBal = dealdata.receiver.toUpperCase() === address.toUpperCase() ? await readContract({
@@ -201,7 +201,7 @@ const Main = () => {
                             args: [address],
                         }) : 0
                     } else if (Number(dealdata.getTokenIndex) === 10001) {
-                        get = <><img src='https://commudao.cmhexa.com/items/wood.png' width='20px' alt='wood'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} WOOD</>
+                        get = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreidldk7skx44xwstwat2evjyp4u5oy5nmamnrhurqtjapnwqzwccd4' width='20px' alt='wood'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} WOOD</>
                         sendToken = dealdata.receiver.toUpperCase() === address.toUpperCase() ? 10001 : 0
                         sendAmount = dealdata.receiver.toUpperCase() === address.toUpperCase() ? ethers.utils.formatEther(dealdata.getTokenAmount) : 0
                         sendBal = dealdata.receiver.toUpperCase() === address.toUpperCase() ? await readContract({
@@ -211,7 +211,7 @@ const Main = () => {
                             args: [address],
                         }) : 0
                     } else if (Number(dealdata.getTokenIndex) === 10002) {
-                        get = <><img src='https://commudao.cmhexa.com/items/tuna.png' width='20px' alt='tuna'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} TUNA</>
+                        get = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreifqroahbmxgnmsqdot5bzu3xbsa7y27mnlo6k45efgidmqxqrstbe' width='20px' alt='tuna'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} TUNA</>
                         sendToken = dealdata.receiver.toUpperCase() === address.toUpperCase() ? 10002 : 0
                         sendAmount = dealdata.receiver.toUpperCase() === address.toUpperCase() ? ethers.utils.formatEther(dealdata.getTokenAmount) : 0
                         sendBal = dealdata.receiver.toUpperCase() === address.toUpperCase() ? await readContract({
@@ -221,7 +221,7 @@ const Main = () => {
                             args: [address],
                         }) : 0
                     } else if (Number(dealdata.getTokenIndex) === 10003) {
-                        get = <><img src='https://commudao.cmhexa.com/items/mice.png' width='20px' alt='mice'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} MICE</>
+                        get = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreidcakmgzpqytuzlvvok72r2hg2n5tqb25jfwecymelylaysdzkd6i' width='20px' alt='mice'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} MICE</>
                         sendToken = dealdata.receiver.toUpperCase() === address.toUpperCase() ? 10003 : 0
                         sendAmount = dealdata.receiver.toUpperCase() === address.toUpperCase() ? ethers.utils.formatEther(dealdata.getTokenAmount) : 0
                         sendBal = dealdata.receiver.toUpperCase() === address.toUpperCase() ? await readContract({
@@ -231,7 +231,7 @@ const Main = () => {
                             args: [address],
                         }) : 0
                     } else if (Number(dealdata.getTokenIndex) === 10004) {
-                        get = <><img src='https://commudao.cmhexa.com/items/copper.png' width='20px' alt='copper'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} COPPER</>
+                        get = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreidau3s66zmqwtyp2oimumulxeuw7qm6apcornbvxbqmafvq3nstiq' width='20px' alt='copper'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} COPPER</>
                         sendToken = dealdata.receiver.toUpperCase() === address.toUpperCase() ? 10004 : 0
                         sendAmount = dealdata.receiver.toUpperCase() === address.toUpperCase() ? ethers.utils.formatEther(dealdata.getTokenAmount) : 0
                         sendBal = dealdata.receiver.toUpperCase() === address.toUpperCase() ? await readContract({
@@ -241,7 +241,7 @@ const Main = () => {
                             args: [address],
                         }) : 0
                     } else if (Number(dealdata.getTokenIndex) === 10005) {
-                        get = <><img src='https://commudao.cmhexa.com/items/jasper.png' width='20px' alt='jasper'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} JASPER</>
+                        get = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreidfl4mgyczqwl3gtunpherc5ri3qbfzm2vevdwcojmhpz3viubopy' width='20px' alt='jasper'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} JASPER</>
                         sendToken = dealdata.receiver.toUpperCase() === address.toUpperCase() ? 10005 : 0
                         sendAmount = dealdata.receiver.toUpperCase() === address.toUpperCase() ? ethers.utils.formatEther(dealdata.getTokenAmount) : 0
                         sendBal = dealdata.receiver.toUpperCase() === address.toUpperCase() ? await readContract({
@@ -251,7 +251,7 @@ const Main = () => {
                             args: [address],
                         }) : 0
                     } else if (Number(dealdata.getTokenIndex) === 10006) {
-                        get = <><img src='https://commudao.cmhexa.com/tokens/jdao.png' width='20px' alt='jdao'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} JDAO</>
+                        get = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreia2bjrh7yw2vp23e5lnc6u75weg6nq7dzkyruggsnjxid6qtofeeq' width='20px' alt='jdao'></img>&nbsp;&nbsp;{ethers.utils.formatEther(dealdata.getTokenAmount)} JDAO</>
                         sendToken = dealdata.receiver.toUpperCase() === address.toUpperCase() ? 10006 : 0
                         sendAmount = dealdata.receiver.toUpperCase() === address.toUpperCase() ? ethers.utils.formatEther(dealdata.getTokenAmount) : 0
                         sendBal = dealdata.receiver.toUpperCase() === address.toUpperCase() ? await readContract({
@@ -263,7 +263,7 @@ const Main = () => {
                     }
 
                     if ((Number(dealdata.offerTokenIndex) >= 10000 || Number(dealdata.offerNftIndex) > 0) && Number(dealdata.getTokenIndex) === 1) {
-                        fee = <><img src='https://commudao.cmhexa.com/tokens/cmj.png' width='20px' alt='cmj'></img>&nbsp;&nbsp;{(ethers.utils.formatEther(dealdata.getTokenAmount) * 0.025).toFixed(8)} CMJ</>
+                        fee = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreiabbtn5pc6di4nwfgpqkk3ss6njgzkt2evilc5i2r754pgiru5x4u' width='20px' alt='cmj'></img>&nbsp;&nbsp;{(ethers.utils.formatEther(dealdata.getTokenAmount) * 0.025).toFixed(8)} CMJ</>
                         feeToken = dealdata.receiver.toUpperCase() === address.toUpperCase() ? 1 : 0
                         feeAmount = dealdata.receiver.toUpperCase() === address.toUpperCase() ? ethers.utils.formatEther(dealdata.getTokenAmount) * 0.025 : 0
                         feeBal = await readContract({
@@ -273,7 +273,7 @@ const Main = () => {
                             args: [address],
                         })
                     } else if ((Number(dealdata.offerTokenIndex) >= 10000 || Number(dealdata.offerNftIndex) > 0) && Number(dealdata.getTokenIndex) === 2) {
-                        fee = <><img src='https://commudao.cmhexa.com/tokens/jusdt.png' width='20px' alt='jusdt'></img>&nbsp;&nbsp;{(ethers.utils.formatEther(dealdata.getTokenAmount) * 0.025).toFixed(8)} JUSDT</>
+                        fee = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreif3vllg6mwswlqypqgtsh7i7wwap7zgrkvtlhdjoc63zjm7uv6vvi' width='20px' alt='jusdt'></img>&nbsp;&nbsp;{(ethers.utils.formatEther(dealdata.getTokenAmount) * 0.025).toFixed(8)} JUSDT</>
                         feeToken = dealdata.receiver.toUpperCase() === address.toUpperCase() ? 2 : 0
                         feeAmount = dealdata.receiver.toUpperCase() === address.toUpperCase() ? ethers.utils.formatEther(dealdata.getTokenAmount) * 0.025 : 0
                         feeBal = await readContract({
@@ -283,7 +283,7 @@ const Main = () => {
                             args: [address],
                         })
                     } else if (Number(dealdata.offerTokenIndex) === 1) {
-                        fee = <><img src='https://commudao.cmhexa.com/tokens/cmj.png' width='20px' alt='cmj'></img>&nbsp;&nbsp;{(ethers.utils.formatEther(dealdata.offerTokenAmount) * 0.025).toFixed(8)} CMJ</>
+                        fee = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreiabbtn5pc6di4nwfgpqkk3ss6njgzkt2evilc5i2r754pgiru5x4u' width='20px' alt='cmj'></img>&nbsp;&nbsp;{(ethers.utils.formatEther(dealdata.offerTokenAmount) * 0.025).toFixed(8)} CMJ</>
                         feeToken = dealdata.receiver.toUpperCase() === address.toUpperCase() ? 1 : 0
                         feeAmount = dealdata.receiver.toUpperCase() === address.toUpperCase() ? ethers.utils.formatEther(dealdata.offerTokenAmount) * 0.025 : 0
                         feeBal = await readContract({
@@ -293,7 +293,7 @@ const Main = () => {
                             args: [address],
                         })
                     } else if (Number(dealdata.offerTokenIndex) === 2) {
-                        fee = <><img src='https://commudao.cmhexa.com/tokens/jusdt.png' width='20px' alt='jusdt'></img>&nbsp;&nbsp;{(ethers.utils.formatEther(dealdata.offerTokenAmount) * 0.025).toFixed(8)} JUSDT</>
+                        fee = <><img src='https://apricot-secure-ferret-190.mypinata.cloud/ipfs/bafkreif3vllg6mwswlqypqgtsh7i7wwap7zgrkvtlhdjoc63zjm7uv6vvi' width='20px' alt='jusdt'></img>&nbsp;&nbsp;{(ethers.utils.formatEther(dealdata.offerTokenAmount) * 0.025).toFixed(8)} JUSDT</>
                         feeToken = dealdata.receiver.toUpperCase() === address.toUpperCase() ? 2 : 0
                         feeAmount = dealdata.receiver.toUpperCase() === address.toUpperCase() ? ethers.utils.formatEther(dealdata.offerTokenAmount) * 0.025 : 0
                         feeBal = await readContract({
